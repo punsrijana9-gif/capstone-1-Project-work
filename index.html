@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentmaker Open Capstone 1">
+
+    <!-- FIX 9: a title a visitor understands -->
+    <title>Community Learning Hub</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER
+         FIX 6 and 8: removed the stray ">" characters and the misspelled
+         classes. Every class here now exists in styles.css. -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Community Learning Hub</h1>
+            <p>Learn together. Grow together. Stay connected.</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION
+         FIX 1: data-view must match EXACTLY what app.js compares with:
+         "roster", "group-board", "leader-channel", "history" -->
+    <nav class="navigation">
+        <div class="container nav-container">
+            <button class="nav-button active" data-view="roster">Roster</button>
+            <button class="nav-button" data-view="group-board">Group Board</button>
+            <button class="nav-button" data-view="leader-channel">Leader Channel</button>
+            <button class="nav-button" data-view="history">History</button>
+        </div>
+    </nav>
+
+    <!-- MAIN
+         FIX 7: only ONE <main> on the page (the empty welcome one is gone) -->
+    <main class="container">
+
+        <!-- app.js puts the group / leader / person buttons here -->
+        <section class="selector-section">
+            <div id="picker"></div>
+        </section>
+
+        <!-- app.js writes "Loading..." or error messages here -->
+        <div id="status" class="status" role="status" aria-live="polite">
+            Loading data...
+        </div>
+
+        <!-- app.js draws the selected view here -->
+        <section id="content" class="content"></section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Tentmaker Open - Capstone 1</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

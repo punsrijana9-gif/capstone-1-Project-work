@@ -1,0 +1,443 @@
+
+   /* GENERAL */
+   
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container {
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    background: #1877f2;
+
+    color: white;
+
+    padding: 28px 0;
+}
+
+
+.site-header h1 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+
+.site-header p {
+    margin: 5px 0 0;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navigation {
+    background: white;
+
+    border-bottom:
+        1px solid #ddd;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+
+.nav-container {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 12px 0;
+
+    flex-wrap: wrap;
+}
+
+
+.nav-button {
+    border: none;
+
+    background: #e4e6eb;
+
+    color: #1c1e21;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.nav-button:hover {
+    background: #d8dadf;
+}
+
+
+.nav-button.active {
+    background: #1877f2;
+
+    color: white;
+}
+
+
+/* =========================================================
+   SELECTOR
+   ========================================================= */
+
+.selector-section {
+    padding-top: 25px;
+}
+
+
+.picker-title {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+
+.button-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.picker-button {
+    border: 1px solid #ccd0d5;
+
+    background: white;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    color: #1c1e21;
+}
+
+
+.picker-button:hover {
+    background: #f0f2f5;
+}
+
+
+.picker-button.active {
+    background: #1877f2;
+
+    color: white;
+
+    border-color: #1877f2;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.status {
+    margin-top: 15px;
+
+    min-height: 24px;
+
+    color: #65676b;
+}
+
+
+.status.error {
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 12px;
+
+    border-radius: 7px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.content {
+    padding: 15px 0 40px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.card {
+    background: white;
+
+    border-radius: 10px;
+
+    border: 1px solid #dddfe2;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 2px 6px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.card h2 {
+    margin-top: 0;
+
+    color: #1c1e21;
+}
+
+
+.card h3 {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   MEMBERS
+   ========================================================= */
+
+.member-list {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+
+.member {
+    padding: 12px;
+
+    border-bottom:
+        1px solid #eee;
+}
+
+
+.member:last-child {
+    border-bottom: none;
+}
+
+
+.leader-badge {
+    display: inline-block;
+
+    background: #e7f3ff;
+
+    color: #1877f2;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-left: 8px;
+}
+
+
+/* =========================================================
+   POSTS
+   ========================================================= */
+
+.post {
+    padding: 16px 0;
+
+    border-top:
+        1px solid #e5e7eb;
+}
+
+
+.post:first-child {
+    border-top: none;
+
+    padding-top: 0;
+}
+
+
+.post-author {
+    font-weight: bold;
+}
+
+
+.post-date {
+    color: #65676b;
+
+    font-size: 13px;
+
+    margin-left: 8px;
+}
+
+
+.post-text {
+    margin: 10px 0;
+}
+
+
+.attachment {
+    display: inline-block;
+
+    background: #f0f2f5;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    color: #555;
+}
+
+
+/* =========================================================
+   HISTORY
+   ========================================================= */
+
+.history-list {
+    padding-left: 20px;
+}
+
+
+.history-list li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.empty {
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 8px;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.meta {
+    color: #6b6865;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    background: rgb(90, 187, 209);
+
+    border-top:
+        1px solid #ddd;
+
+    padding: 25px 0;
+
+    text-align: center;
+
+    color: #65676b;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .site-header h1 {
+        font-size: 24px;
+    }
+
+
+    .nav-button {
+        flex: 1;
+
+        min-width: 130px;
+    }
+
+
+    .card {
+        padding: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   PICKER GROUP AND LINK BUTTON (new)
+   ========================================================= */
+
+.picker-group {
+    margin-bottom: 8px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #1877f2;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
